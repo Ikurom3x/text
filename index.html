@@ -2,11 +2,33 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>האתר שלי</title>
+    <title>WEBSITE OF SAKURA!</title>
 </head>
 <body>
-    <h1>שלום!</h1>
-    <p>i suffer</p>
+    <img id="myImage" src="https://media.giphy.com/media/3o6Zt481sNvUQI1l6/giphy.gif" alt="GIF">
+    
+            #myImage {
+            display: none; 
+            margin-top: 15px;
+            max-width: 300px;
+        }
+    </style> 
+    <h1>שלום!</h1> 
+    <p>i suffer making this website</p>
+    <button onclick="toggleImage()">Press to see a something cool</button>   
+    
+    <script>
+        function toggleImage() {
+            var img = document.getElementById("myImage");
+            
+            // בדיקה האם התמונה מוסתרת או מוצגת, והפיכת המצב
+            if (img.style.display === "none") {
+                img.style.display = "block"; // מציג את התמונה
+            } else {
+                img.style.display = "none";  // מסתיר את התמונה
+            } 
+        }
+    </script>
+
 </body>
-<img src="https://media.giphy.com/media/3o6Zt481isNVuQI1l6/giphy.gif" alt="GIF">
 </html>
