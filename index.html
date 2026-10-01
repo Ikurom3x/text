@@ -34,10 +34,10 @@
             var img = document.getElementById("myImage");
             
             // בדיקה האם התמונה מוסתרת או מוצגת, והפיכת המצב
-            if (img.style.display === "none") {
-                img.style.display = "block"; // מציג את התמונה
-            } else {
+            if (img.style.display === "block") {
                 img.style.display = "none";  // מסתיר את התמונה
+            } else {
+                img.style.display = "block"; // מציג את התמונה
             } 
         }
     </script>
