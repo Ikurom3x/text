@@ -12,6 +12,17 @@
     min-height: 100vh;
     margin: 0;
     text-align: center;
+
+    ul {
+         text-align: right; /* מסדר את השורות כך שיתחילו מימין */
+        align-self: flex-start; /* מושך את כל הרשימה צפונה/ימינה מהמרכז של ה-body */
+        margin-right: 20px; /* רווח קטן מהקצה הימני של המסך */
+    }
+
+    background-image: url("https://media.tenor.com/JPpOjeOiwrIAAAA1/sakura-haruno-fortnite.webp");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     }
        #myImage{  
     
@@ -24,11 +35,17 @@
 <body>
     
    
-    <h1>שלום!</h1> // Hello in Hebrew
+    <h1>שלום!</h1> 
+    bunch of shit i made for fun and to learn how to make a website <br/>
+    <h2>i love sakura haruno</h2>
     <p>i suffer making this website</p>
     <button onclick="toggleImage()">Press to see a something cool</button>   
     <img id="myImage" src="https://static.wikia.nocookie.net/theunitedorganizationtoonsheroes/images/2/2a/Sakura_Haruno.png/revision/latest/scale-to-width-down/1024?cb=20211108233556" alt="Sakura Haruno">
-    
+    <ul>
+        <li><a href="https://www.youtube.com/watch?v=GsRqIge3PVg">click here to see an emotional video</a></li>
+        <li><a href="https://www.youtube.com/watch?v=6jhaOBPgFvY">click here to see a badass video</a></li>
+        <li><a href="https://www.youtube.com/watch?v=5aEch2LgQaM">click here to see a cute video</a></li>
+    </ul>
     <script>
         function toggleImage() {
             var img = document.getElementById("myImage");
